@@ -1,0 +1,32 @@
+
+.carousel-item {
+    height: 700px;
+}
+
+.carousel-item img {
+    object-fit: cover;
+    height: 100%;
+}
+
+.title-small {
+    font-size: .65em;
+}
+
+.text-fixed-carousel {
+    position: absolute;
+    color: var(--color-light);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3.5em;
+}
+
+@media screen and (max-width: 500px) {
+    .carousel-item {
+        height: 400px;
+    }
+
+    .text-fixed-carousel {
+        font-size: 1.5rem;
+    }
+}

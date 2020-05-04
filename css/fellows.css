@@ -1,0 +1,116 @@
+.fellows .card {
+    background-color: transparent;
+    border: none;
+}
+.fellows li:hover a::before, .fellows li:hover a::after {
+    content: 'b';
+    width: 2em;
+    height: 2em;
+    font-family: var(--font-surround-title);
+    padding: 0 5px;
+}
+
+
+.fellows .card-header {
+    background-color: transparent;
+}
+
+.fellows .card-header-pills {
+    justify-content: center;
+}
+
+.fellows li a {
+    padding-left: 2.85rem;
+    padding-right: 2.85rem;
+}
+
+.fellows .card-body figure, .img-thumbnail {
+    background-image: url('../integration_maquette_finale/bg_dark.png');
+    display: inline-block;
+}
+
+.fellows img {
+    transition: all .3s ease;
+}
+
+.img-thumbnail {
+    padding: .4rem;
+}
+
+.fellows .card-body {
+    color: var(--color-light);
+}
+
+.fellows .live {
+    position: relative;
+}
+
+.live .badge-secondary {
+    background-color: var(--color-grey);
+    color: var(--color-dark);
+    box-shadow: 0 0 20px var(--color-light);
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2rem;
+    width: 75%;
+    opacity: 0;
+    transition: all .3s ease;
+}
+
+.fellows .live .badge-secondary span {
+    color: var(--color-secondary);
+}
+
+.fellows .live .name {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 4rem;
+    opacity: 0;
+    transition: all .3s ease;
+}
+
+.live:hover .badge-secondary,
+.live:hover .name {
+    opacity: 1;
+}
+
+.live:hover img {
+    opacity: .3;
+}
+
+.dead .name {
+    position: absolute;
+    font-size: 4rem;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.dead .name::after {
+    position: absolute;
+    content: '';
+    width: 120%;
+    height: 4px;
+    background: var(--color-secondary);
+    left: -10%;
+    top: 50%;
+    box-shadow: 0 0 5px var(--color-secondary);
+}
+
+.dead img {
+    opacity: .5;
+}
+
+.dead .badge-secondary {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: transparent;
+    font-size: 4rem;
+    color: var(--color-secondary);
+}

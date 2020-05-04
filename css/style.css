@@ -1,0 +1,124 @@
+@import "caroussel.css";
+@import "navbar.css";
+@import "fellows.css";
+@import "contact.css";
+
+@font-face {
+    font-family: 'font-aniron-title';
+    src: url('../font/Aniron-7BaP.ttf');
+}
+
+@font-face {
+    font-family: 'font-surround-title';
+    src: url('../font/tengwar_annatar/tngan.ttf');
+    /*src: url('../font/tengwar_annatar/tnganb.ttf');*/
+    /*src: url('../font/tengwar_annatar/tnganbi.ttf');*/
+    /*src: url('../font/tengwar_annatar/tngani.ttf');*/
+}
+
+@font-face {
+    font-family: 'FontName';
+    src: url('FileName.eot');
+}
+
+@font-face {
+    font-family: 'font-main';
+    src: url('../font/PartyBusiness-4B0K.ttf');
+}
+
+:root {
+    /* police */
+    --font-aniron-title: 'font-aniron-title';
+    --font-surround-title: 'font-surround-title';
+    --font-main: 'font-main';
+
+    /* color */
+    --color-light: #ffffff;
+    --color-dark: #000000;
+    --color-secondary: #ff5f01;
+    --color-grey: #c8c8c8db;
+
+    /* font-size */
+    --size-main: 14px;
+}
+
+/* contante class */
+.bg-orange {
+    background: var(--color-secondary);
+}
+
+.text-orange {
+    color: var(--color-secondary);
+}
+
+.text-snow {
+    color: var(--color-light);
+}
+.container-xl {
+    max-width: 1300px;
+}
+.my-6 {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+.mx-6 {
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+
+/* general */
+
+body, html {
+    font-family: var(--font-main);
+    color: var(--color-dark);
+    font-size: var(--size-main);
+    background-image: url('../integration_maquette_finale/bg_light.png');
+    scroll-behavior: smooth;
+}
+
+a, a:hover {
+    text-decoration: none;
+    color: var(--color-dark);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-aniron-title);
+}
+
+h1::after, h1::before,
+h2::after, h2::before,
+h3::after, h3::before,
+h4::after, h4::before {
+    content: 'ö';
+    width: 2em;
+    height: 2em;
+    font-family: var(--font-surround-title);
+    color: var(--color-secondary);
+    padding: 0 10px;
+}
+
+li:hover a {
+    color: var(--color-secondary);
+    border-bottom: 5px solid var(--color-secondary);
+    padding-bottom: calc(.5rem - 8px);
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.nav-link {
+    display: inline-block;
+}
+
+img {
+    width: 100%;
+}
+
+.footer {
+    font-size: 1rem;
+    font-family: var(--font-aniron-title);
+}
+.footer a {
+    display: block;
+}
+.footer img {
+    width: 75%;
+}
